@@ -5,4 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './my-introduction.component.html',
   styleUrls: ['./my-introduction.component.css'],
 })
-export class MyIntroductionComponent {}
+export class MyIntroductionComponent {
+  profileImage = '../../assets/image/profilePic.jpeg';
+}

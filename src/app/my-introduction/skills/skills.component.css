@@ -1,0 +1,16 @@
+.header3 {
+  font-size: 17px;
+  color: rgb(142, 142, 142);
+  letter-spacing: 3px;
+
+  border-bottom: 2px;
+  border-color: black;
+  border-width: 2px;
+}
+
+.content {
+  font-size: 13px;
+  color: rgb(71, 71, 71);
+  letter-spacing: 1px;
+  padding-bottom: 30px;
+}

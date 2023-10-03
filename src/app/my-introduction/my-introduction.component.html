@@ -1,1 +1,44 @@
-<p>my-introduction works!</p>
+<div
+  class="container p-3 fa-align-center mt-5 shadow-sm rounded"
+  aria-hidden="true"
+>
+  <div class="row p-5 bg-secondary-subtle"></div>
+  <div class="row text-center w-1 justify-content-center bg-secondary-subtle">
+    <div style="position: absolute; height: 300px">
+      <img
+        src="{{ profileImage }}"
+        class="image"
+        alt="{{ profileImage }}"
+        style="position: relative"
+      />
+    </div>
+  </div>
+  <div style="height: 100px" class="row bg-secondary-subtle p-5"></div>
+  <div style="height: 100px"></div>
+  <div class="row justify-content-center header p-3 mb-2">SARUN THONGARAM</div>
+  <div class="row justify-content-center header2 mb-5">FULLSTACK DEVELOPER</div>
+  <div class="row">
+    <div class="col">
+      <div class="row">
+        <div class="col">
+          <div class="header3 px-3">INTRODUCTION</div>
+          <div class="px-3"><hr /></div>
+          <div class="px-3 content">
+            I am a Fullstack Developer , proficient in Javascript/Typescript. I
+            have been woking with various software framework such as React and
+            Angular for front-end and Express and Nestjs for back-end. I also
+            have experience working with a clound service(Azure based). I have
+            been working in global company (English Based) .
+          </div>
+        </div>
+        <app-skills></app-skills>
+        <app-education></app-education>
+      </div>
+    </div>
+    <div class="col border-left">
+      <app-career-summary></app-career-summary>
+      <app-certificate></app-certificate>
+    </div>
+  </div>
+  <app-contact class="m-5"></app-contact>
+</div>

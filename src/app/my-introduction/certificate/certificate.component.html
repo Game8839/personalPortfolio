@@ -1,0 +1,11 @@
+<div class="col">
+  <div class="header3 px-3">EDUCATION</div>
+  <div class="px-3"><hr /></div>
+  <div class="px-3 content" *ngFor="let certificate of certificates">
+    <div class="school">
+      {{ certificate.title }}
+    </div>
+    <div>{{ certificate.header }}</div>
+    <div>{{ certificate.content }}</div>
+  </div>
+</div>
