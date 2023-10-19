@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { menu } from '../models/menu';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'header',
@@ -7,12 +8,12 @@ import { menu } from '../models/menu';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
+  constructor(private activatedRoute: ActivatedRoute, private router: Router) {}
   @Output() eventEmitter = new EventEmitter();
-  selectedMenu = 'introduction';
-  ngOnInit(): void {}
+  selectedMenu;
 
-  selectMenu(menu) {
-    this.selectedMenu = menu;
-    this.eventEmitter.emit(this.selectedMenu);
+  ngOnInit(): void {
+    console.log();
+    this.selectedMenu = this.router.getCurrentNavigation();
   }
 }

@@ -1,7 +1,8 @@
 <header class="m-3" (eventEmitter)="setSelectedMenu($event)"></header>
-<my-introduction *ngIf="selectedMenu == 'introduction'"></my-introduction>
+<router-outlet></router-outlet>
+<!-- <my-introduction *ngIf="selectedMenu == 'introduction'"></my-introduction>
 <my-projects
   class="container m-3"
   *ngIf="selectedMenu == 'project'"
 ></my-projects>
-<my-stack class="container m-3" *ngIf="selectedMenu == 'stack'"></my-stack>
+<my-stack class="container m-3" *ngIf="selectedMenu == 'stack'"></my-stack> -->

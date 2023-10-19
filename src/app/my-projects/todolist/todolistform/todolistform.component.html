@@ -1,0 +1,40 @@
+<div class="container">
+  <form class="form-control">
+    <div class="row m-2">
+      <div class="col-12">
+        <input type="text" class="form-control" placeholder="Header" />
+      </div>
+    </div>
+    <div class="row m-2">
+      <div class="col-12">
+        <textarea
+          type="text"
+          class="form-control"
+          name="detail"
+          placeholder="Detail"
+        ></textarea>
+      </div>
+    </div>
+    <div class="row m-2">
+      <div class="col-6">
+        <input type="text" class="form-control" placeholder="CreateBy" />
+      </div>
+      <dl-date-picker
+        startView="day"
+        maxView="year"
+        minView="minute"
+        minuteStep="5"
+        [(ngModel)]="selectedDate"
+      >
+      </dl-date-picker>
+    </div>
+    <div class="row">
+      <div class="col">
+        <button class="btn btn-outline-secondary" type="button">ADD</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-outline-secondary" type="button">RESET</button>
+      </div>
+    </div>
+  </form>
+</div>
