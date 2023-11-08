@@ -5,7 +5,6 @@ import { TTask, TodoListService } from '../todolist.service';
   selector: 'todolisttickets',
   templateUrl: './todolisttickets.component.html',
   styleUrls: ['./todolisttickets.component.css'],
-  providers: [TodoListService],
 })
 export class TodolistticketsComponent implements OnInit {
   todoLists: TTask[] = [];

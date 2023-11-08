@@ -18,9 +18,12 @@ import { OreoComponent } from './my-projects/oreo/oreo.component';
 import { TodolistformComponent } from './my-projects/todolist/todolistform/todolistform.component';
 import { TodolistticketsComponent } from './my-projects/todolist/todolisttickets/todolisttickets.component';
 import {
-  DlDateTimeDateModule,
-  DlDateTimePickerModule,
-} from 'angular-bootstrap-datetimepicker';
+  NgbAlertModule,
+  NgbDatepickerModule,
+  NgbModule,
+} from '@ng-bootstrap/ng-bootstrap';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { TodoListService } from './my-projects/todolist/todolist.service';
 
 @NgModule({
   declarations: [
@@ -45,8 +48,10 @@ import {
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    DlDateTimeDateModule,
-    DlDateTimePickerModule,
+    NgbAlertModule,
+    NgbDatepickerModule,
+    NgbModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

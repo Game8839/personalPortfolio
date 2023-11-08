@@ -38,15 +38,6 @@ export class TodoListService {
       createdAt: new Date(),
       deathLine: new Date(),
     },
-    {
-      id: 1,
-      header: 'test header3',
-      task: 'test',
-      createdBy: 'game',
-      status: 'active',
-      createdAt: new Date(),
-      deathLine: new Date(),
-    },
   ];
   constructor() {}
 

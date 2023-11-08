@@ -1,9 +1,9 @@
-<div class="container">
+<div class="container p-3">
   <div *ngFor="let todolist of todoLists">
     <div class="card" style="height: 50px">
       <div class="row">
         <div class="col">{{ todolist.status }}</div>
-        <div class="col-8">{{ todolist.header }}</div>
+        <div class="col-8">{{ todolist.header | uppercase }}</div>
         <div class="col">{{ todolist.createdBy }}</div>
       </div>
     </div>
