@@ -8,13 +8,5 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class MyProjectsComponent {
   constructor(private route: Router, private activatedRoute: ActivatedRoute) {}
-  projects = ['ECommerce', 'Oreo', 'TodoList'];
-  selectedProject: string = this.projects[0];
-
-  onSelect(project: string) {
-    this.selectedProject = project;
-    this.route.navigate([project.toLowerCase()], {
-      relativeTo: this.activatedRoute,
-    });
-  }
+  projects = ['ecommerce', 'oreo', 'todolist'];
 }

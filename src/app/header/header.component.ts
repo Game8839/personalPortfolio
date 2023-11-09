@@ -13,7 +13,8 @@ export class HeaderComponent implements OnInit {
   selectedMenu;
 
   ngOnInit(): void {
-    console.log();
     this.selectedMenu = this.router.getCurrentNavigation();
+
+    console.log(this.selectedMenu);
   }
 }

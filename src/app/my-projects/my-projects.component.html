@@ -5,13 +5,13 @@
   <div class="row text-center">
     <div class="col">
       <ul class="list-group" *ngFor="let project of projects">
-        <li
+        <a
           class="list-group-item"
-          (click)="onSelect(project)"
+          [routerLink]="[project]"
+          routerLinkActive="selectedProject"
           [ngClass]="{ selectedProject: selectedProject == project }"
+          >{{ project }}</a
         >
-          {{ project }}
-        </li>
       </ul>
     </div>
     <div class="col-10 p-2" style="background-color: rgb(177, 229, 255)">
